@@ -13,7 +13,7 @@
   "author": "Tim Sandström, Tage Tjerngren",
   "license": "ISC",
   "bin": {
-    "hello": "./bin/index.js"
+    "kahootbot": "./bin/index.js"
   },
   "bugs": {
     "url": "https://github.com/hhhhhhhh1233/KahootBot/issues"
