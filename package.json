@@ -1,0 +1,22 @@
+{
+  "name": "kahootbot",
+  "version": "1.0.0",
+  "description": "CLI app for Kahoot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhhhhhhh1233/KahootBot.git"
+  },
+  "author": "Tim Sandström, Tage Tjerngren",
+  "license": "ISC",
+  "bin": {
+    "hello": "./bin/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hhhhhhhh1233/KahootBot/issues"
+  },
+  "homepage": "https://github.com/hhhhhhhh1233/KahootBot#readme"
+}
