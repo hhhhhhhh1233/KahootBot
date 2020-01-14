@@ -26,7 +26,7 @@ rl.question("What do you want to do now?\n", answer => {
     //rl.close();
     rl.question("Enter Game Pin: ", pin => {
       rl.question("Enter your name: ", name => {
-        rl.close();
+        //rl.close();
         console.log(pin);
         console.log(name);
         client.join(pin, name);
@@ -34,11 +34,15 @@ rl.question("What do you want to do now?\n", answer => {
           console.log("I joined the Kahoot!");
         });
         client.on("questionStart", question => {
-          /* TODO: 
+          // TODO: Fix qeustion input
           rl.question("Guess now: ", guess => {
-            question.answer(guess);
-          });*/
-          question.answer(Math.floor(Math.random() * 3));
+            rl.resume();
+            console.log(guess);
+            //var guess = 0;
+            question.answer(Number(guess));
+            rl.pause();
+          });
+          //question.answer(Math.floor(Math.random() * 3));
         });
         client.on("quizEnd", () => {
           console.log("The quiz has ended.");
