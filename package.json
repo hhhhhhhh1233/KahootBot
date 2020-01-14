@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/hhhhhhhh1233/KahootBot/issues"
   },
-  "homepage": "https://github.com/hhhhhhhh1233/KahootBot#readme"
+  "homepage": "https://github.com/hhhhhhhh1233/KahootBot#readme",
+  "dependencies": {
+    "kahoot.js-updated": "^1.2.0"
+  }
 }
