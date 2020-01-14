@@ -23,7 +23,7 @@ rl.question("What do you want to do now?\n", answer => {
     rl.close();
     rl.question("Enter Game Pin: ", pin => {
       console.log(pin);
-      //kahoot.join(answer, name);
+      // TODO: kahoot.join(answer, name);
       rl.close();
     });
   }
