@@ -2,8 +2,8 @@
 
 ## Features
 
-Joining games  
-Answering questions _Not fully implemented_  
+Joining games _Implemented_  
+Answering questions _Implemented_  
 Bot accounts _Not Implemented_
 
 ## Why
