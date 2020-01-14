@@ -2,9 +2,9 @@
 
 ## Features
 
-Joining games \n
-Answering questions **Not fully implemented**\n
-Bot accounts **Not Implemented**\n
+Joining games  
+Answering questions _Not fully implemented_  
+Bot accounts _Not Implemented_
 
 ## Why
 
