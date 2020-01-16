@@ -13,9 +13,9 @@ function sleep(milliseconds) {
 const kahoot = require("kahoot.js-updated");
 
 i = 0;
-amount = 10000;
-name = "Test";
-pin = "6047629";
+amount = 1000;
+name = "Lukas kahoot bots";
+pin = "4690002";
 
 // TODO: Fixa så att den inte bara joina en tredjedel av amount
 while (i < amount) {
@@ -29,7 +29,7 @@ while (i < amount) {
     console.log("I joined the Kahoot!");
   });
   client.on("questionStart", question => {
-    question.answer(Math.floor(Math.random() * 3));
+    question.answer(Math.floor(Math.random() * 4));
   });
   console.log(fname);
 }
