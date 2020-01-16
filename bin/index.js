@@ -15,6 +15,9 @@ const rl = readline.createInterface({
 console.log(artStr);
 console.log("1. Join Game");
 console.log("2. Raid with bots");
+console.log("\n");
+console.log("\n");
+console.log("\n");
 
 //Remeber only close readline in last nested rl.question.
 rl.question("What do you want to do now?\n", answer => {
@@ -48,5 +51,31 @@ rl.question("What do you want to do now?\n", answer => {
   if (answer.match("Raid with bots") || answer.match("2")) {
     // TODO: Code here!!!!!!!!
     console.log("it work");
+    rl.question("Enter game pin: ", pin => {
+      rl.question("Enter Name: ", name => {
+        rl.question("Enter amount of bots: ", amount => {
+          ////console.log(amount + pin + name);
+          i = 0;
+          joinedCount = 0;
+          while (i <= amount) {
+            const client = new kahoot();
+            fname = name;
+            fname += i;
+            i++;
+
+            client.join(pin, fname);
+            client.on("joined", () => {
+              console.log(joinedCount);
+              joinedCount += 1;
+              //console.log("I joined the Kahoot!");
+            });
+            client.on("questionStart", question => {
+              question.answer(Math.floor(Math.random() * 4));
+            });
+            console.log(fname);
+          }
+        });
+      });
+    });
   }
 });
