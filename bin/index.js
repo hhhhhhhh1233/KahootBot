@@ -50,7 +50,6 @@ rl.question("What do you want to do now?\n", answer => {
   }
   if (answer.match("Raid with bots") || answer.match("2")) {
     // TODO: Code here!!!!!!!!
-    console.log("it work");
     rl.question("Enter game pin: ", pin => {
       rl.question("Enter Name: ", name => {
         rl.question("Enter amount of bots: ", amount => {
